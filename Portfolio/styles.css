@@ -1,6 +1,23 @@
-body { margin: 0; font-family: Arial; background: #f4f6f8; }
-.hero { background: #07112a; color: white; padding: 40px 0; }
-.container { max-width: 1000px; margin: auto; padding: 20px; }
-.hero .container { display: flex; gap: 20px; }
-.hero-right img { max-width: 300px; border-radius: 10px; }
-.content { background: white; padding: 25px; border-radius: 10px; margin-top: -20px; }
+:root{
+  --bg:#0b1220; --card:#fff; --accent:#0f1724;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, Arial, sans-serif;background:#f4f6f8;color:#0b1220;line-height:1.6}
+.container{max-width:1000px;margin:0 auto;padding:24px}
+.hero{background:linear-gradient(90deg,#07112a 0%, #0b2340 100%);color:white;padding:44px 0}
+.hero .container{display:flex;gap:20px;align-items:center}
+.hero-left{flex:1}
+.hero-right{flex:1;display:flex;justify-content:flex-end}
+.hero h1{font-size:36px;margin:0 0 8px;font-weight:700}
+.lead{opacity:0.9;margin:0 0 16px}
+.hero-right img{max-width:320px;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,0.4)}
+.content{background:white;border-radius:12px;padding:28px;margin-top:-40px;box-shadow:0 10px 30px rgba(15,23,42,0.06)}
+.content h2{margin-top:0}
+.footer{margin:36px auto;text-align:center;color:#475569}
+a{color:#0f62fe;text-decoration:none}
+a:hover{text-decoration:underline}
+@media(max-width:800px){
+  .hero .container{flex-direction:column;text-align:center}
+  .hero-right{justify-content:center}
+  .hero-right img{max-width:260px}
+}
