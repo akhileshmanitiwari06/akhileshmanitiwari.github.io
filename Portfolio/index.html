@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Akhilesh Mani Tiwari — Portfolio</title>
 
+  <!-- SEO -->
   <meta name="description" content="Portfolio of Akhilesh Mani Tiwari — Machine Learning, AI & Python Developer" />
-  <meta name="keywords" content="Akhilesh Mani Tiwari, Machine Learning, AI, Python Developer, Data Science" />
+  <meta name="keywords" content="Akhilesh Mani Tiwari, Machine Learning, AI Developer, Python Developer, Data Science" />
   <meta name="author" content="Akhilesh Mani Tiwari" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
   <header class="hero">
     <div class="container">
@@ -19,21 +19,44 @@
         <h1>Akhilesh Mani Tiwari</h1>
         <p class="lead">Machine Learning • AI • Data Science • Python Developer</p>
         <p class="links">
-          <a href="https://github.com/akhileshmanitiwari">GitHub</a> •
-          <a href="https://linkedin.com/in/akhilesh-mani-tiwari">LinkedIn</a> •
+          <a href="https://github.com/akhileshmanitiwari" target="_blank">GitHub</a> •
+          <a href="https://linkedin.com/in/akhilesh-mani-tiwari" target="_blank">LinkedIn</a> •
           <a href="mailto:akhileshmanitiwari419@gmail.com">Email</a>
         </p>
       </div>
-
       <div class="hero-right">
-        <img src="image.png" alt="Image">
+        <img src="assets/banner.png" alt="Banner" />
       </div>
     </div>
   </header>
 
   <main class="container content">
-    <h2>About Me</h2>
-    <p>I am Akhilesh Mani Tiwari — Machine Learning & AI Developer.</p>
+    <section>
+      <h2>About Me</h2>
+      <p>I am <strong>Akhilesh Mani Tiwari</strong>, a Machine Learning & AI developer building end-to-end intelligent systems including SpeechTrans, CineMind-AI, and Stock Movement Prediction.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>CineMind AI</strong> — Movie analytics & recommendation (NLP, embeddings)</li>
+        <li><strong>SpeechTrans</strong> — Speech recognition & translation pipeline (Whisper + Transformers)</li>
+        <li><strong>Stock Movement Prediction</strong> — LSTM & ensemble models for UP/DOWN prediction</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <p>Python, TensorFlow, PyTorch, Scikit-learn, Data Analysis, Docker, Git</p>
+    </section>
   </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Akhilesh Mani Tiwari • Hosted on GitHub Pages</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
